@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/parent_1"
+    >
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your name : "
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+         />
+
+    <EditText
+        android:id="@+id/nameField"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_centerHorizontal="true"
+        android:hint="Foulen"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/cc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameField"
+        android:layout_marginTop="200dp"
+        android:text="Choose 2 colors : "
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/cc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        >
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ch_red"/>
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/cc"
+            android:layout_centerHorizontal="true"
+            android:background="@color/red" />
+
+        <CheckBox
+            android:id="@+id/ch_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/cc"
+            android:layout_centerHorizontal="true"
+            android:background="@color/blue"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ch_yellow"/>
+
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/cc"
+            android:layout_centerHorizontal="true"
+            android:background="@color/yellow"
+            />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/mix_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rg"
+        android:layout_marginTop="131dp"
+        android:text="MIX" />
+
+</RelativeLayout>
